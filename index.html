@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <title>Sass Starter Pack</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="container-fluid clearfix">
+      <ul class="float-l">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
+      </ul>
+      <ul class="float-r">
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+        <li>
+          <a href="#"><i class="fas fa-th dropdownBtn"></i></a>
+          <ul class="dropdown-items hide">
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-1.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-2.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-3.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-4.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-5.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-6.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-7.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-8.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-9.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-1.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-2.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropwdown-item">
+                <img src="../img/dropdown-icon-3.png" alt="">
+                <div class="item-name">Google</div>
+              </li>
+            </a>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+        <li>
+          <a class="user-circle" href="#">E</a>
+          <div class="user-dropdown hide">
+            <div class="user-avatar float-l">
+              <div class="avatar">E</div>
+            </div>
+            <div class="user-account float-r">
+              <h3 class="user-name">Username Here</h3>
+              <p class="user-email">username@gmail.com</p>
+              <a class="user-privacy" href="#">Privacy</a>
+              <a class="user-account" href="#">My Account</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="content">
+        <img class="logo" src="../img/google-logo.png" alt="">
+        <form action="#">
+          <div>
+            <input type="text" placeholder="Search...">
+            <img class="mic-search" src="../img/google-mic.png" alt="">
+          </div>
+          <button type="submit">Google Search</button>
+          <button type="submit">I'm Feeling Lucky</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid clearfix">
+      <ul class="float-l">
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+      </ul>
+      <ul class="float-r">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    var dropdownBtn = document.querySelector(".dropdownBtn");
+    var dropdownItems = document.querySelector(".dropdown-items");
+    dropdownBtn.addEventListener("click", function() {
+      dropdownItems.classList.toggle("hide");
+    });
+
+    var userCircle = document.querySelector(".user-circle");
+    var userDropdown = document.querySelector(".user-dropdown");
+    userCircle.addEventListener("click", function() {
+      userDropdown.classList.toggle("hide");
+    });
+  </script>
+
+</body>
+
+</html>
